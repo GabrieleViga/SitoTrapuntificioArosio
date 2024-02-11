@@ -1,0 +1,45 @@
+main{
+    padding: 4vh;
+}
+h1{
+    height: 10vh;
+    font-weight: bold;
+}
+.paragraph{
+    line-height: 2.1vh;
+}
+.custom-carousel {
+    max-width: 80vh;
+    margin: auto;
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 70vh;
+    width: 70vh;
+}
+.carousel-inner{
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.linkArredo:hover{
+    color: red
+}
+
+.text{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.carousel{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+@keyframes showcontent{
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}

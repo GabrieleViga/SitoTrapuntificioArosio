@@ -1,0 +1,71 @@
+.navbar-nav .asec:hover,
+.navbar-nav .asec:active {
+    color: black;
+}
+.under{
+    z-index: 1;
+    box-shadow: 0 1vh 10vh #dbdbdb;
+}
+ul{
+    color: white;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    color: red;
+}
+.paragraph{
+    line-height: 2.1vh;
+}
+.custom-carousel {
+    max-width: 80vh;
+    margin: auto;
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    width: 70vh;
+}
+.carousel-inner{
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.img-thumbnail{
+    background-color: red;
+}
+.mat{
+    border: 1px solid red;
+    object-fit: cover;
+    object-position: center;
+    width: 70vh;
+    height: 60vh;
+}
+#section2{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.text{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.mat{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.carousel{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+@keyframes showcontent{
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}

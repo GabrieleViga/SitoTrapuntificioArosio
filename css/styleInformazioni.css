@@ -1,0 +1,41 @@
+h1{
+    height: 10vh;
+    font-weight: bold;
+}
+main{
+    padding: 4vh;
+}
+.label{
+    color: white;
+}
+.input, .textarea{
+    border: 2px solid red;
+}
+.box{
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 3vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+.box:hover{
+    border-color: red;
+}
+.mb-3{
+    margin-bottom: 0rem!important;
+}
+
+.col{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+@keyframes showcontent{
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}

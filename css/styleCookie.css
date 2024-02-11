@@ -1,0 +1,45 @@
+main{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .box{
+    column-count: 3;
+    column-gap: 3%;
+    column-rule: 4px dotted white;
+    width: 80%;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2%;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.box:hover{
+    border: 2px solid red;
+    column-rule: 4px dotted red;
+}
+.paragraph{
+    font-size: 1.7vh;
+}
+
+
+@keyframes showcontent{
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+@media(max-width: 860px){
+    main .box{
+        column-count: 1;
+    }
+}

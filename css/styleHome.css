@@ -1,0 +1,100 @@
+.navbar-nav .asec:hover,
+.navbar-nav .asec:active {
+    color: black;
+}
+
+.secondhead{
+    font-weight: bold;    
+}
+.quality{
+    font-size: 20px;
+    font-style: oblique; 
+}
+.cit{
+    font-style: oblique;
+}
+.under{
+    z-index: 1;
+    box-shadow: 0 1vh 10vh #dbdbdb;
+}
+
+.buttonInfo{
+    width: 30vh;
+    padding: 1.5vh 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.spanInfo{
+    background: red;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover .spanInfo{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+#section2{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.info{
+    text-align:right;
+}
+.col{
+    flex-basis: 50%;
+    padding: 1%;
+}
+.row{
+    padding-top: 2%;
+    display: flex;
+    height: 70%;
+    align-items: center;
+}
+.map{
+    border: 0.7vh solid red;
+    border-radius: 10px;
+    animation: showcontent 1s ease-in-out 1 forwards;
+    width: 100%;
+    object-fit:contain;
+}
+
+.fade1{
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+.fade2{
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+.fade3{
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+@keyframes showcontent{
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
