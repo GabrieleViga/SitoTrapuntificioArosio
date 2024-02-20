@@ -15,9 +15,6 @@ li{
 li:hover{
     color: red;
 }
-.paragraph{
-    line-height: 2.1vh;
-}
 .custom-carousel {
     max-width: 80vh;
     margin: auto;
