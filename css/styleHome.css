@@ -75,6 +75,9 @@ button:hover .spanInfo{
     object-fit:contain;
 }
 
+.initial-hidden {
+    opacity: 0;
+}
 .fade1{
     animation: showcontent 1s ease-in-out 1 forwards;
 }
@@ -83,6 +86,9 @@ button:hover .spanInfo{
 }
 .fade3{
     animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+.fade4{
+    animation: showcontent 1s ease-in-out 0.9s 1 forwards;
 }
 @keyframes showcontent{
     from {
